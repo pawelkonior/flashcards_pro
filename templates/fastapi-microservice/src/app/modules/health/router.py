@@ -37,7 +37,7 @@ async def liveness() -> HealthResponse:
     responses={
         HTTPStatus.SERVICE_UNAVAILABLE: {
             "model": HealthResponse,
-            "description": "A required dependecy is unavailable.",
+            "description": "A required dependency is unavailable.",
         }
     },
     summary="Check traffic readiness",
